@@ -30,15 +30,22 @@ const Header = () => (
 
 const Nav = styled.nav`
   display: flex;
+  min-width: 100vw;
   justify-content: space-between;
   align-items: center;
   background-color: #000;
   height: 80px;
   padding: 0 20px;
+  @media (max-width: 450px) {
+    justify-content: center;
+  }
 `
 
 const LogoFont = styled.h1`
   margin: 0;
+  @media (max-width: 800px) {
+    display: none;
+  }
 `
 
 const LogoLink = styled(Link)`
@@ -48,6 +55,9 @@ const LogoLink = styled(Link)`
   text-decoration: none;
   color: #ffffff;
   margin-left: 20px;
+  @media (max-width: 450px) {
+    display: none;
+  }
 `
 
 const NavLink = styled(props => <Link {...props} />)`
