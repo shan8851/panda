@@ -29,6 +29,9 @@ const IndexPage = () => (
       <li>Mulesoft</li>
       <li>Integration</li>
     </List>
+    <BodyCopy>
+      We provide recruitment services in Europe and North America.
+    </BodyCopy>
   </Layout>
 )
 
