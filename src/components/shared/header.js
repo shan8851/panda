@@ -43,6 +43,7 @@ const Nav = styled.nav`
 
 const LogoFont = styled.h1`
   margin: 0;
+  font-family: panda-bold;
   @media (max-width: 800px) {
     display: none;
   }

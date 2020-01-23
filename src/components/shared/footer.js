@@ -28,7 +28,7 @@ const FooterWrapper = styled.footer`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
+  height: 80px;
 `
 
 const FooterIcon = styled.a`
