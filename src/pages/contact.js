@@ -27,36 +27,18 @@ export default function Contact() {
             </div>
           </Info>
           <Form>
-            <div style={{ display: "flex", alignItems: "center" }}>
-              <BoldText style={{ width: "25%" }} white>
-                Name:
-              </BoldText>
-              <ShortField
-                style={{ width: "65%" }}
-                type="text"
-                placeholder="Click to type..."
-              />
-            </div>
-            <div style={{ display: "flex", alignItems: "center" }}>
-              <BoldText style={{ width: "25%" }} white>
-                Email:
-              </BoldText>
-              <ShortField
-                style={{ width: "65%" }}
-                type="text"
-                placeholder="Click to type..."
-              />
-            </div>
-            <div style={{ display: "flex", alignItems: "center" }}>
-              <BoldText style={{ width: "25%" }} white>
-                Message:
-              </BoldText>
-              <LongField
-                style={{ width: "65%" }}
-                type="text"
-                placeholder="Add message..."
-              />
-            </div>
+            <InputWrap>
+              <BoldTextForm white>Name:</BoldTextForm>
+              <ShortField type="text" placeholder="Click to type..." />
+            </InputWrap>
+            <InputWrap>
+              <BoldTextForm white>Email:</BoldTextForm>
+              <ShortField type="text" placeholder="Click to type..." />
+            </InputWrap>
+            <InputWrap>
+              <BoldTextForm white>Message:</BoldTextForm>
+              <LongField type="text" placeholder="Add message..." />
+            </InputWrap>
             <div
               style={{
                 display: "flex",
@@ -79,6 +61,18 @@ const Wrapper = styled.div`
   width: 80%;
   flex-grow: 1;
   margin: auto;
+  @media (max-width: 1030px) {
+    flex-direction: column;
+  }
+`
+
+const InputWrap = styled.div`
+  display: flex;
+  align-items: center;
+  @media (max-width: 700px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `
 
 const Info = styled.div`
@@ -91,6 +85,9 @@ const Info = styled.div`
   padding-top: 10px;
   border: 3px solid black;
   margin: auto;
+  @media (max-width: 1030px) {
+    width: 80%;
+  }
 `
 
 const Form = styled.div`
@@ -103,6 +100,12 @@ const Form = styled.div`
   background-color: black;
   padding-left: 20px;
   margin: auto;
+  @media (max-width: 1030px) {
+    width: 80%;
+  }
+  @media (max-width: 700px) {
+    height: 400px;
+  }
 `
 
 const Title = styled.h2`
@@ -118,6 +121,17 @@ const BoldText = styled.p`
   font-family: panda-bold;
 `
 
+const BoldTextForm = styled.p`
+  color: ${props => (props.white ? "#ffffff" : "#000000")};
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  font-family: panda-bold;
+  @media (max-width: 700px) {
+    width: 100%;
+  }
+`
+
 const RegText = styled.p`
   color: ${props => (props.white ? "#ffffff" : "#000000")};
   margin: 0;
@@ -128,10 +142,14 @@ const RegText = styled.p`
 const ShortField = styled.input`
   background-color: #fff;
   color: #000;
+  width: 65%;
   font-family: panda-bold;
   border: none;
   border-bottom: 3px solid white;
   margin: 10px;
+  @media (max-width: 700px) {
+    width: 90%;
+  }
   ::placeholder,
   ::-webkit-input-placeholder {
     font-family: panda-bold;
@@ -145,10 +163,14 @@ const ShortField = styled.input`
 const LongField = styled.textarea`
   background-color: #fff;
   color: #000;
+  width: 65%;
   font-family: panda-bold;
   border: none;
   border-bottom: 3px solid white;
   margin: 10px;
+  @media (max-width: 700px) {
+    width: 90%;
+  }
   ::placeholder,
   ::-webkit-input-placeholder {
     font-family: panda-bold;

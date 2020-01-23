@@ -16,7 +16,7 @@ export default function About() {
       <SEO title="About" />
       <Container>
         <Heading center>About </Heading>
-        <div style={{ display: "flex", alignItems: "center" }}>
+        <ImgWrap>
           <Img src={Panda} />
           <BodyCopy>
             I have 10 years of experience in recruitment and for the last 6
@@ -25,7 +25,7 @@ export default function About() {
             and managing teams of recruiters, I decided to set up Panda, my own
             recruitment business, 3 years ago.
           </BodyCopy>
-        </div>
+        </ImgWrap>
         <BodyCopy>My key strengths are as follows:</BodyCopy>
         <List>
           <li>
@@ -67,4 +67,12 @@ export default function About() {
 
 const Img = styled.img`
   width: 300px;
+`
+
+const ImgWrap = styled.div`
+  display: flex;
+  align-items: center;
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
 `
