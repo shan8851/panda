@@ -6,6 +6,7 @@ export const Container = styled.div`
   flex-direction: column;
   padding: 20px;
 `
+
 export const Heading = styled.h1`
   font-family: panda-bold;
   text-align: ${props => (props.center ? "center" : "left")};
