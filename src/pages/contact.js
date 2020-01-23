@@ -3,11 +3,11 @@ import Layout from "../components/shared/layout"
 import SEO from "../components/shared/seo"
 import { Heading } from "../components/shared/sharedComponents.style"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <Heading>Home Page</Heading>
-  </Layout>
-)
-
-export default IndexPage
+export default function Contact() {
+  return (
+    <Layout>
+      <SEO title="Contact" />
+      <Heading>Contact Page</Heading>
+    </Layout>
+  )
+}

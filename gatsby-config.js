@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Panda Search`,
+    description: `Panda has been created to assist business with recruitment in niche technology areas.`,
+    author: `@pandasearch`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -15,6 +15,16 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["panda, panda-bold"],
+          urls: ["/static/fonts/font.css"],
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
