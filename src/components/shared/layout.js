@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
   return (
     <Container>
       <Header />
-      <Main>{children}</Main>
+      {children}
       <Footer />
     </Container>
   )
@@ -20,11 +20,6 @@ const Container = styled.div`
   min-height: 100vh;
   min-width: 100vw;
   flex-direction: column;
-`
-
-const Main = styled.div`
-  padding: 2% 2%;
-  flex-grow: 1;
 `
 
 export default Layout
