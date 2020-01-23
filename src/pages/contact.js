@@ -3,7 +3,6 @@ import Layout from "../components/shared/layout"
 import SEO from "../components/shared/seo"
 import { Heading, Container } from "../components/shared/sharedComponents.style"
 import styled from "styled-components"
-import { FaFileExcel } from "react-icons/fa"
 
 export default function Contact() {
   return (
