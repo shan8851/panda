@@ -24,10 +24,12 @@ const Container = styled.div`
   align-items: center;
   min-height: 100vh;
   background-color: #EFEDE1;
+  padding: 0 2%;
 `
 
 const Img = styled.img`
   height: 30vh;
+  width: auto;
 `
 
 const Message = styled.p`
