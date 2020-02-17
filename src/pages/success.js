@@ -1,20 +1,21 @@
 import React from "react"
+import Panda from '../images/pandalogo1.png'
 import SEO from "../components/shared/seo"
-import Panda from '../images/pandalogo2.png'
 import styled from 'styled-components'
 import { Link } from "gatsby"
+const Success = () => {
+  return (
+    <Container>
+      <SEO title="Success! Message sent" />
+      <Img src={Panda} alt='Logo' />
+      <Message>
+        Success, your message has been sent, we will get back to you as soon as possible. Click <MessageLink to={'/'}>Here</MessageLink> to go back home.
+      </Message>
+    </Container>
+  )
+}
 
-const NotFoundPage = () => (
-  <Container>
-    <SEO title="404: Not found" />
-    <Img src={Panda} alt='Logo' />
-    <Message>
-      Oops. That page doesn't seem to exist. Click <MessageLink to={'/'}>Here</MessageLink> to go back home.
-    </Message>
-  </Container>
-)
-
-export default NotFoundPage
+export default Success
 
 const Container = styled.div`
   display: flex;
