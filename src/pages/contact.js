@@ -66,6 +66,14 @@ const Container = styled.div`
   flex-direction: column;
   padding: 20px;
   justify-content: center;
+  width: 50%;
+  margin: auto;
+  @media (max-width: 1200px) {
+    width: 70%
+  }
+  @media (max-width: 1000px) {
+    width: 90%
+  }
 `
 
 const ContactWrap = styled.div`
@@ -83,7 +91,7 @@ const Img = styled.img`
 const StyledA = styled.a`
   color: #000000;
   text-decoration: none;
-  font-family: panda-bold;
+  font-family: panda;
   @media (max-width: 510px) {
     font-size: 16px;
   }
@@ -96,16 +104,6 @@ const PhoneIcon = styled.a`
 const Form = styled.form`
   display: flex;
   flex-direction: column;
-  width: 70%;
-  @media (max-width: 800px) {
-    width: 80%;
-  }
-  @media (max-width: 600px) {
-    width: 90%;
-  }
-  @media (max-width: 500px) {
-    width: 100%;
-  }
 `
 
 const Input = styled.input`
