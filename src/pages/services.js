@@ -33,7 +33,7 @@ export default function Services() {
           We provide recruitment services at a fixed cost per hire, agreed up-front, and payable only if we introduce you to the candidate you’ve been looking for.
 
         </BodyCopy>
-        <ContactLink>CONTACT US FOR A COPY OF OUR CORPORATE BROCHURE</ContactLink>
+        <ContactLink to='/contact'>CONTACT US FOR A COPY OF OUR CORPORATE BROCHURE</ContactLink>
       </Container>
     </Layout>
   )
