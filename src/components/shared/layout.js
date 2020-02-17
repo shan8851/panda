@@ -1,6 +1,5 @@
 import React from "react"
 import Header from "./header"
-import Footer from "./footer"
 import styled from "styled-components"
 import "./layout.css"
 import "../../../static/fonts/font.css"
@@ -10,7 +9,6 @@ const Layout = ({ children }) => {
     <Container>
       <Header />
       {children}
-      <Footer />
     </Container>
   )
 }

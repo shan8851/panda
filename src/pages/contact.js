@@ -52,6 +52,7 @@ export default function Contact() {
             <option value="afternoon">Afternoon</option>
             <option value="evening">Evening</option>
           </Select>
+          <Textarea rows="6" placeholder='Anything else?' name='message'  />
           <SubmitButton type="submit">Submit</SubmitButton>
         </Form>
 
@@ -108,6 +109,17 @@ const Form = styled.form`
 `
 
 const Input = styled.input`
+  margin: 10px 0;
+  border: 1px solid black;
+  padding: 5px;
+  font-family: panda;
+  &::placeholder {
+    opacity: 1;
+    font-family: panda;
+   }
+`
+
+const Textarea = styled.textarea`
   margin: 10px 0;
   border: 1px solid black;
   padding: 5px;
