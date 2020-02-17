@@ -3,7 +3,8 @@ import SEO from "../components/shared/seo"
 import Panda from '../images/pandalogo2.png'
 import styled from 'styled-components'
 import { Link } from "gatsby"
-
+import '../components/shared/layout.css'
+import '../../static/fonts/font.css'
 const NotFoundPage = () => (
   <Container>
     <SEO title="404: Not found" />
@@ -22,6 +23,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background-color: #EFEDE1;
 `
 
 const Img = styled.img`

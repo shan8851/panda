@@ -3,6 +3,8 @@ import Panda from '../images/pandalogo1.png'
 import SEO from "../components/shared/seo"
 import styled from 'styled-components'
 import { Link } from "gatsby"
+import '../components/shared/layout.css'
+import '../../static/fonts/font.css'
 const Success = () => {
   return (
     <Container>
@@ -23,6 +25,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background-color: #EFEDE1;
 `
 
 const Img = styled.img`
