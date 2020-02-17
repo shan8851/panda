@@ -39,12 +39,13 @@ export default function Contact() {
           data-netlify-honeypot='bot-field'
         >
           <Input type='hidden' name='bot-field' />
-          <Input type="text" placeholder="Enter your name" />
-          <Input type="text" placeholder="Enter your business name" />
-          <Input type="text" placeholder="Enter your email" />
-          <Input type="text" placeholder="Enter your phone number" />
-          <Input type="text" placeholder="Location" />
-          <Select value={time} onChange={handleChange}>
+          <input type="hidden" name="form-name" value="contact" />
+          <Input name="name" type="text" placeholder="Enter your name" />
+          <Input name="business name" type="text" placeholder="Enter your business name" />
+          <Input name="email" type="text" placeholder="Enter your email" />
+          <Input name="phone number" type="text" placeholder="Enter your phone number" />
+          <Input name="location" type="text" placeholder="Location" />
+          <Select name="best time to call" value={time} onChange={handleChange}>
             <option>Best time to call</option>
             <option value="anytime">Anytime</option>
             <option value="morning">Morning</option>
@@ -108,9 +109,9 @@ const Form = styled.form`
 
 const Input = styled.input`
   margin: 10px 0;
-  border: 2px solid black;
+  border: 1px solid black;
   padding: 5px;
-  font-family: panda-bold;
+  font-family: panda;
   &::placeholder {
     opacity: 1;
     font-family: panda;
@@ -118,7 +119,7 @@ const Input = styled.input`
 `
 
 const Select = styled.select`
-  border: 2px solid black;
+  border: 1px solid black;
   font-family: panda;
   margin: 10px 0;  
 `
