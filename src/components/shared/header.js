@@ -1,28 +1,27 @@
 import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
-import Logo from "../../images/panda.jpg"
+import Logo from "../../images/pandalogo1.png"
 
 const Header = () => (
   <Nav>
     <div>
       <LogoLink to="/">
         <NavLogo src={Logo} />
-        <LogoFont>Panda Search</LogoFont>
       </LogoLink>
     </div>
     <div>
       <NavLink activeStyle={activeStyles} to="/">
-        Home
+        HOME
       </NavLink>
       <NavLink activeStyle={activeStyles} to="/about">
-        About
+        ABOUT
       </NavLink>
       <NavLink activeStyle={activeStyles} to="/services">
-        Services
+        SERVICES
       </NavLink>
       <NavLink activeStyle={activeStyles} to="/contact">
-        Contact
+        CONTACT
       </NavLink>
     </div>
   </Nav>
@@ -33,58 +32,48 @@ const Nav = styled.nav`
   min-width: 100vw;
   justify-content: space-between;
   align-items: center;
-  background-color: #000;
-  height: 80px;
-  padding: 0 20px;
+  padding: 20px 0;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    padding-top: 20px;
+  }
   @media (max-width: 450px) {
     justify-content: center;
   }
 `
 
-const LogoFont = styled.h1`
-  margin: 0;
-  font-family: panda-bold;
-  @media (max-width: 800px) {
-    display: none;
-  }
-`
-
 const LogoLink = styled(Link)`
   display: flex;
-  font-family: panda-bold;
-  align-items: center;
-  text-decoration: none;
-  color: #ffffff;
   margin-left: 20px;
-  @media (max-width: 450px) {
-    display: none;
-  }
 `
 
 const NavLink = styled(props => <Link {...props} />)`
-  font-family: panda-bold;
-  font-weight: 800;
+  font-family: panda;
+  letter-spacing: 4px;
   margin: 0 10px;
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
   & :active {
-    color: #fff;
+    color: #000000;
   }
   & :hover {
-    color: #fff;
+    color: #000000;
   }
   @media (max-width: 580px) {
     font-size: 18px;
+  }
+  @media (max-width: 430px) {
+    font-size: 14px;
   }
 `
 
 //active styles
 const activeStyles = {
-  borderBottom: "4px solid white",
+  borderBottom: "2px solid black",
 }
 
 const NavLogo = styled.img`
-  height: 50px;
+  height: 100px;
   margin: 0;
   padding-right: 10px;
 `

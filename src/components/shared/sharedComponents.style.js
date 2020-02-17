@@ -8,12 +8,18 @@ export const Container = styled.div`
 `
 
 export const Heading = styled.h1`
-  font-family: panda-bold;
+  font-family: panda;
+  letter-spacing: 3px;
   text-align: ${props => (props.center ? "center" : "left")};
+  margin-top: 20px;
+  @media (max-width: 500px) {
+    font-size: 26px;
+  }
 `
 
 export const BodyCopy = styled.p`
   font-family: panda;
+  margin-bottom: 40px;
 `
 
 export const List = styled.ul`

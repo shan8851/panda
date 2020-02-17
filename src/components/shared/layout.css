@@ -123,6 +123,7 @@ input {
 button,
 select {
   text-transform: none;
+  padding: 30px;
 }
 [type="reset"],
 [type="submit"],

@@ -20,6 +20,7 @@ const Container = styled.div`
   min-height: 100vh;
   min-width: 100vw;
   flex-direction: column;
+  background-color: #EFEDE1;
 `
 
 export default Layout
