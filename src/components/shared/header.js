@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
-import Logo from "../../images/pandalogo1.png"
+import Logo from "../../images/pandalogo2.png"
 
 const Header = () => (
   <Nav>
@@ -24,6 +24,7 @@ const Header = () => (
         CONTACT
       </NavLink>
     </div>
+    <Invisible />
   </Nav>
 )
 
@@ -67,13 +68,15 @@ const NavLink = styled(props => <Link {...props} />)`
   }
 `
 
+const Invisible = styled.div``
+
 //active styles
 const activeStyles = {
   borderBottom: "2px solid black",
 }
 
 const NavLogo = styled.img`
-  height: 100px;
+  height: 120px;
   margin: 0;
   padding-right: 10px;
 `
