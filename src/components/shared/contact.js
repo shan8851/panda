@@ -34,6 +34,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding: 20vh 20vw;
+  text-align: center;
 `
 
 const ContactRow = styled.div`
