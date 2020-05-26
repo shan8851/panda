@@ -11,17 +11,17 @@ const Header = () => (
       </LogoLink>
     </div>
     <div>
-      <NavLink activeStyle={activeStyles} to="/">
+      {/* <NavLink activeStyle={activeStyles} to="/">
         HOME
       </NavLink>
       <NavLink activeStyle={activeStyles} to="/about">
         ABOUT
-      </NavLink>
+      </NavLink> */}
       <NavLink activeStyle={activeStyles} to="/services">
         SERVICES
       </NavLink>
-      <NavLink activeStyle={activeStyles} to="/contact">
-        CONTACT
+      <NavLink activeStyle={activeStyles} to="/">
+        BLOG
       </NavLink>
     </div>
     <Invisible />
@@ -68,7 +68,10 @@ const NavLink = styled(props => <Link {...props} />)`
   }
 `
 
-const Invisible = styled.div``
+const Invisible = styled.div`
+  height: 120px;
+  width: 120px;
+`
 
 //active styles
 const activeStyles = {
@@ -77,8 +80,7 @@ const activeStyles = {
 
 const NavLogo = styled.img`
   height: 120px;
-  margin: 0;
-  padding-right: 10px;
+  width: 120px;
 `
 
 export default Header
