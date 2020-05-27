@@ -11,16 +11,10 @@ const Header = () => (
       </LogoLink>
     </div>
     <div>
-      {/* <NavLink activeStyle={activeStyles} to="/">
-        HOME
-      </NavLink>
-      <NavLink activeStyle={activeStyles} to="/about">
-        ABOUT
-      </NavLink> */}
       <NavLink activeStyle={activeStyles} to="/services">
         SERVICES
       </NavLink>
-      <NavLink activeStyle={activeStyles} to="/">
+      <NavLink activeStyle={activeStyles} to="/blog">
         BLOG
       </NavLink>
     </div>
