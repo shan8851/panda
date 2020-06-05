@@ -41,6 +41,9 @@ const ContactRow = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `
 
 const ContactCol = styled.div`
@@ -52,4 +55,7 @@ const ContactLink = styled.a`
   font-family: panda;
   text-decoration: none;
   color: black;
+  @media (max-width: 800px) {
+    margin-bottom: 50px;
+  }
 `

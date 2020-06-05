@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Contact from "../components/shared/contact"
 import styled from "styled-components"
 import Header from "../components/shared/header"
@@ -21,6 +21,7 @@ export default function Template({
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
+        <BackLink to="/blog/">← Back to index</BackLink>
       </BlogContainer>
       <Contact />
     </div>
@@ -33,12 +34,20 @@ const BlogContainer = styled.div`
 
 const BlogContent = styled.div`
   font-family: panda;
+  margin-bottom: 50px;
 `
 
 const BlogTitle = styled.h1`
   font-family: panda-bold;
   font-size: 68px;
-  margin-bottom: 50px;
+`
+
+const BackLink = styled(Link)`
+  font-family: panda-bold;
+  font-size: 36px;
+  margin-top: 100px;
+  text-decoration: none;
+  color: black;
 `
 
 const BlogDate = styled.p`
