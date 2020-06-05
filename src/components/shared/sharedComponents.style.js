@@ -25,3 +25,18 @@ export const BodyCopy = styled.p`
 export const List = styled.ul`
   font-family: panda;
 `
+
+export const BoldText = styled.h1`
+  font-family: panda-bold;
+  font-size: 50px;
+`
+
+export const Button = styled.button`
+  background-color: black;
+  color: white;
+  font-family: panda-bold;
+  font-size: 18px;
+  width: 300px;
+  margin: auto;
+  border-radius: 8px;
+`
