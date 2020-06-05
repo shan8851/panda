@@ -31,6 +31,11 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   padding: 20vh 20vw;
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 `
 
 const Img = styled.img`
@@ -43,6 +48,7 @@ const AboutWrap = styled.div`
   height: 450px;
   margin: 30px 0;
   z-index: 1000;
+  justify-content: center;
 `
 
 const AboutHeader = styled.h1`

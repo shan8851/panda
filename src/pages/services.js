@@ -74,6 +74,10 @@ const Container = styled.div`
 const ServicesGrid = styled.div`
   display: flex;
   padding-bottom: 20px;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `
 
 const ServicesCol = styled.div`

@@ -28,13 +28,6 @@ const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-  @media (max-width: 800px) {
-    flex-direction: column;
-    padding-top: 20px;
-  }
-  @media (max-width: 450px) {
-    justify-content: center;
-  }
 `
 
 const LogoLink = styled(Link)`
@@ -65,6 +58,9 @@ const NavLink = styled(props => <Link {...props} />)`
 const Invisible = styled.div`
   height: 120px;
   width: 120px;
+  @media (max-width: 650px) {
+    display: none;
+  }
 `
 
 //active styles
