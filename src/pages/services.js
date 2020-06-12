@@ -15,7 +15,6 @@ export default function Services() {
         <BoldText style={{ marginBottom: 100 }}>Our Services</BoldText>
         <ServicesGrid>
           <ServicesCol>
-            <ColImg src={Image} />
             <ColHeader>Instruct Us</ColHeader>
             <ColText>
               Tell us your hiring needs: the skills, experience and ‘culture
@@ -30,7 +29,6 @@ export default function Services() {
             </ColText>
           </ServicesCol>
           <ServicesCol>
-            <ColImg src={Image} />
             <ColHeader>Assess the Candidates</ColHeader>
             <ColText>You consider the candidate profiles we send you.</ColText>
             <ColText>
@@ -42,7 +40,6 @@ export default function Services() {
             </ColText>
           </ServicesCol>
           <ServicesCol>
-            <ColImg src={Image} />
             <ColHeader>Hire the Best</ColHeader>
             <ColText>
               Our fees are only payable if you successfully hire a candidate

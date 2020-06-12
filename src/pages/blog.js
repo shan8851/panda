@@ -3,6 +3,7 @@ import PostLink from "../components/shared/post-link"
 import Header from "../components/shared/header"
 import Contact from "../components/shared/contact"
 import styled from "styled-components"
+import { BoldText } from "../components/shared/sharedComponents.style"
 
 const BlogPage = ({
   data: {
@@ -16,7 +17,10 @@ const BlogPage = ({
   return (
     <div>
       <Header />
-      <BlogWrapper>{Posts}</BlogWrapper>
+      <TempWrap>
+        <BoldText style={{ marginBottom: 100 }}>Coming Soon...</BoldText>
+      </TempWrap>
+      {/* <BlogWrapper>{Posts}</BlogWrapper> */}
       <Contact />
     </div>
   )
@@ -28,6 +32,13 @@ const BlogWrapper = styled.div`
   flex-wrap: wrap;
   width: 60vw;
   margin: auto;
+`
+
+const TempWrap = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 `
 
 export default BlogPage
